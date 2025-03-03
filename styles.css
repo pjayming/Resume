@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #e857e3;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .skills, .hobbies, .interests, .contact {
+    padding: 120px 0;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 120px 0; /* Add margin for spacing */
+}
+
+.about:hover, .skills:hover, .projects:hover, .interests:hover, .contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills .skill {
+    margin: 20px 0;
+    position: relative;
+}
+
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-weight: bold;
+}
+
+.progress {
+    background: #e7e7e7;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+}
+
+.html {
+    width: 90%;
+    background: #e44d26;
+}
+
+.css {
+    width: 80%;
+    background: #1572B6;
+}
+
+.js {
+    width: 75%;
+    background: #F7DF1E;
+}
+
+.react {
+    width: 70%;
+    background: #61DBFB;
+}
+
+.projects .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.project-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.project-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-circle:hover img {
+    transform: scale(1.1);
+}
+
+.interests {
+    padding: 40px 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.interests p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
